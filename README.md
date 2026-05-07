@@ -130,7 +130,7 @@ TensorFlow • JAX • Triton • Detectron2 • Diffusers • CVAT • FAISS �
 
 ## Featured Projects
 
-### Aerial Imagery → Vector Infrastructure Pipeline
+### 🛰️ Aerial Imagery → Vector Infrastructure Pipeline
 
 End-to-end deep learning pipeline converting high-resolution aerial imagery into structured vector outputs.
 
@@ -146,7 +146,7 @@ End-to-end deep learning pipeline converting high-resolution aerial imagery into
 
 ---
 
-### Multi-Modal Object Detection System
+### 🎯  Multi-Modal Object Detection System 
 
 Detection pipeline designed for sparse imagery, dense imagery, ortho-mosaics, and full-motion video.
 
@@ -161,7 +161,7 @@ Detection pipeline designed for sparse imagery, dense imagery, ortho-mosaics, an
 
 ---
 
-### Multi-Agent Research Assistant
+### 🤖 Multi-Agent Research Assistant
 
 LangGraph-based multi-agent system for planning, retrieval, reasoning, and verification workflows.
 
