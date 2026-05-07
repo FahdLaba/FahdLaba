@@ -9,10 +9,12 @@
   ╚══════════════════════════════════════════════════════════════════╝
 -->
 
-<!-- ══════════════ HERO BANNER ══════════════ -->
-<a href="https://github.com/FahdBellaba">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=220&section=header&text=Fahd%20Bellaba&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Deep%20Learning%20%E2%80%A2%20Computer%20Vision%20%E2%80%A2%20Agentic%20Systems&descSize=18&descAlignY=62&animation=fadeIn" alt="Fahd Bellaba banner" />
-</a>
+<!-- ══════════════ HERO BANNER ══════════════
+     Save banner.svg to assets/banner.svg in your profile repo.
+     The path below assumes that location. -->
+<p align="center">
+  <img src="./assets/banner.svg" alt="Fahd Bellaba — AI Engineer" width="100%" />
+</p>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
@@ -207,24 +209,40 @@ Personal research playground: **Stable Diffusion fine-tuning** with LoRA, **Cont
   <img src="https://img.shields.io/badge/-RLHF%20%2F%20DPO-22c55e?style=flat-square" />
   <img src="https://img.shields.io/badge/-Multi--Agent%20Coordination-f59e0b?style=flat-square" />
   <img src="https://img.shields.io/badge/-Vision--Language%20Models-ec4899?style=flat-square" />
+  <img src="https://img.shields.io/badge/-Diffusion%20Architectures-8b5cf6?style=flat-square" />
   <img src="https://img.shields.io/badge/-Long--Context%20Reasoning-06b6d4?style=flat-square" />
 </p>
 
 ---
 
-## ✦ Connect  
+## 🤝 Connect
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/fahd-bellaba-44ba24234"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:Fahdbellaba@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://wa.me/96893389014"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
+  <a href="https://www.linkedin.com/in/fahd-bellaba-44ba24234">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:Fahdbellaba@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
 </p>
 
+<p align="center">
+  <i>Pixels → tensors → tools → decisions.</i>
+</p>
+
+<p align="center">
+  <sub>·  ·  ·</sub>
+</p>
 
 <!--
   ════════════════════════════════════════════════════════════════════
   SETUP CHECKLIST
   ════════════════════════════════════════════════════════════════════
+  [ ] Save the provided `banner.svg` file into your profile repo at
+      the path: `assets/banner.svg`
+      (Or place it at the repo root and change the <img src=...> at
+      the top of this README to `./banner.svg`.)
+
   [ ] Find-and-replace `FahdBellaba` with your real GitHub username.
       It appears in: profile-views badge, all 4 stats widgets,
       trophy card, activity graph, and the snake animation path.
