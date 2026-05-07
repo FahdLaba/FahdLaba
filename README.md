@@ -209,7 +209,6 @@ Personal research playground: **Stable Diffusion fine-tuning** with LoRA, **Cont
   <img src="https://img.shields.io/badge/-RLHF%20%2F%20DPO-22c55e?style=flat-square" />
   <img src="https://img.shields.io/badge/-Multi--Agent%20Coordination-f59e0b?style=flat-square" />
   <img src="https://img.shields.io/badge/-Vision--Language%20Models-ec4899?style=flat-square" />
-  <img src="https://img.shields.io/badge/-Diffusion%20Architectures-8b5cf6?style=flat-square" />
   <img src="https://img.shields.io/badge/-Long--Context%20Reasoning-06b6d4?style=flat-square" />
 </p>
 
