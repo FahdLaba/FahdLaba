@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Fahd Bellaba — AI Engineer">
+  <defs>
+    <!-- Deep base gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="50%" stop-color="#0d1424"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+
+    <!-- Soft cyan glow on the left -->
+    <radialGradient id="glowCyan" cx="0.18" cy="0.5" r="0.45">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Soft violet glow on the right -->
+    <radialGradient id="glowViolet" cx="0.82" cy="0.5" r="0.45">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle background grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+
+    <!-- Accent line gradient -->
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Neural node glow -->
+    <radialGradient id="nodeGlow">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="nodeGlowViolet">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#a78bfa" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title text shadow -->
+    <filter id="textGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── Backdrop layers ── -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  <rect width="1200" height="300" fill="url(#glowCyan)"/>
+  <rect width="1200" height="300" fill="url(#glowViolet)"/>
+
+  <!-- ── Neural network — LEFT ── -->
+  <g opacity="0.85">
+    <!-- Connections (drawn first so nodes sit on top) -->
+    <g stroke="#22d3ee" stroke-width="0.6" opacity="0.35" fill="none">
+      <line x1="60"  y1="90"  x2="150" y2="60"/>
+      <line x1="60"  y1="90"  x2="150" y2="120"/>
+      <line x1="60"  y1="90"  x2="150" y2="180"/>
+      <line x1="60"  y1="150" x2="150" y2="60"/>
+      <line x1="60"  y1="150" x2="150" y2="120"/>
+      <line x1="60"  y1="150" x2="150" y2="180"/>
+      <line x1="60"  y1="150" x2="150" y2="240"/>
+      <line x1="60"  y1="210" x2="150" y2="120"/>
+      <line x1="60"  y1="210" x2="150" y2="180"/>
+      <line x1="60"  y1="210" x2="150" y2="240"/>
+
+      <line x1="150" y1="60"  x2="240" y2="90"/>
+      <line x1="150" y1="60"  x2="240" y2="150"/>
+      <line x1="150" y1="120" x2="240" y2="90"/>
+      <line x1="150" y1="120" x2="240" y2="150"/>
+      <line x1="150" y1="120" x2="240" y2="210"/>
+      <line x1="150" y1="180" x2="240" y2="90"/>
+      <line x1="150" y1="180" x2="240" y2="150"/>
+      <line x1="150" y1="180" x2="240" y2="210"/>
+      <line x1="150" y1="240" x2="240" y2="150"/>
+      <line x1="150" y1="240" x2="240" y2="210"/>
+
+      <line x1="240" y1="90"  x2="330" y2="120"/>
+      <line x1="240" y1="90"  x2="330" y2="180"/>
+      <line x1="240" y1="150" x2="330" y2="120"/>
+      <line x1="240" y1="150" x2="330" y2="180"/>
+      <line x1="240" y1="210" x2="330" y2="120"/>
+      <line x1="240" y1="210" x2="330" y2="180"/>
+    </g>
+
+    <!-- Nodes with halo -->
+    <g>
+      <circle cx="60"  cy="90"  r="9" fill="url(#nodeGlow)"/>
+      <circle cx="60"  cy="90"  r="2.5" fill="#67e8f9"/>
+      <circle cx="60"  cy="150" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="60"  cy="150" r="2.5" fill="#67e8f9"/>
+      <circle cx="60"  cy="210" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="60"  cy="210" r="2.5" fill="#67e8f9"/>
+
+      <circle cx="150" cy="60"  r="9" fill="url(#nodeGlow)"/>
+      <circle cx="150" cy="60"  r="2.5" fill="#67e8f9"/>
+      <circle cx="150" cy="120" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="150" cy="120" r="2.5" fill="#67e8f9"/>
+      <circle cx="150" cy="180" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="150" cy="180" r="2.5" fill="#67e8f9"/>
+      <circle cx="150" cy="240" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="150" cy="240" r="2.5" fill="#67e8f9"/>
+
+      <circle cx="240" cy="90"  r="9" fill="url(#nodeGlow)"/>
+      <circle cx="240" cy="90"  r="2.5" fill="#67e8f9"/>
+      <circle cx="240" cy="150" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="240" cy="150" r="2.5" fill="#67e8f9"/>
+      <circle cx="240" cy="210" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="240" cy="210" r="2.5" fill="#67e8f9"/>
+
+      <circle cx="330" cy="120" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="330" cy="120" r="2.5" fill="#67e8f9"/>
+      <circle cx="330" cy="180" r="9" fill="url(#nodeGlow)"/>
+      <circle cx="330" cy="180" r="2.5" fill="#67e8f9"/>
+    </g>
+  </g>
+
+  <!-- ── Neural network — RIGHT (mirrored, violet) ── -->
+  <g opacity="0.85" transform="translate(1200, 0) scale(-1, 1)">
+    <g stroke="#a78bfa" stroke-width="0.6" opacity="0.35" fill="none">
+      <line x1="60"  y1="90"  x2="150" y2="60"/>
+      <line x1="60"  y1="90"  x2="150" y2="120"/>
+      <line x1="60"  y1="90"  x2="150" y2="180"/>
+      <line x1="60"  y1="150" x2="150" y2="60"/>
+      <line x1="60"  y1="150" x2="150" y2="120"/>
+      <line x1="60"  y1="150" x2="150" y2="180"/>
+      <line x1="60"  y1="150" x2="150" y2="240"/>
+      <line x1="60"  y1="210" x2="150" y2="120"/>
+      <line x1="60"  y1="210" x2="150" y2="180"/>
+      <line x1="60"  y1="210" x2="150" y2="240"/>
+
+      <line x1="150" y1="60"  x2="240" y2="90"/>
+      <line x1="150" y1="60"  x2="240" y2="150"/>
+      <line x1="150" y1="120" x2="240" y2="90"/>
+      <line x1="150" y1="120" x2="240" y2="150"/>
+      <line x1="150" y1="120" x2="240" y2="210"/>
+      <line x1="150" y1="180" x2="240" y2="90"/>
+      <line x1="150" y1="180" x2="240" y2="150"/>
+      <line x1="150" y1="180" x2="240" y2="210"/>
+      <line x1="150" y1="240" x2="240" y2="150"/>
+      <line x1="150" y1="240" x2="240" y2="210"/>
+
+      <line x1="240" y1="90"  x2="330" y2="120"/>
+      <line x1="240" y1="90"  x2="330" y2="180"/>
+      <line x1="240" y1="150" x2="330" y2="120"/>
+      <line x1="240" y1="150" x2="330" y2="180"/>
+      <line x1="240" y1="210" x2="330" y2="120"/>
+      <line x1="240" y1="210" x2="330" y2="180"/>
+    </g>
+
+    <g>
+      <circle cx="60"  cy="90"  r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="60"  cy="90"  r="2.5" fill="#c4b5fd"/>
+      <circle cx="60"  cy="150" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="60"  cy="150" r="2.5" fill="#c4b5fd"/>
+      <circle cx="60"  cy="210" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="60"  cy="210" r="2.5" fill="#c4b5fd"/>
+
+      <circle cx="150" cy="60"  r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="150" cy="60"  r="2.5" fill="#c4b5fd"/>
+      <circle cx="150" cy="120" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="150" cy="120" r="2.5" fill="#c4b5fd"/>
+      <circle cx="150" cy="180" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="150" cy="180" r="2.5" fill="#c4b5fd"/>
+      <circle cx="150" cy="240" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="150" cy="240" r="2.5" fill="#c4b5fd"/>
+
+      <circle cx="240" cy="90"  r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="240" cy="90"  r="2.5" fill="#c4b5fd"/>
+      <circle cx="240" cy="150" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="240" cy="150" r="2.5" fill="#c4b5fd"/>
+      <circle cx="240" cy="210" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="240" cy="210" r="2.5" fill="#c4b5fd"/>
+
+      <circle cx="330" cy="120" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="330" cy="120" r="2.5" fill="#c4b5fd"/>
+      <circle cx="330" cy="180" r="9" fill="url(#nodeGlowViolet)"/>
+      <circle cx="330" cy="180" r="2.5" fill="#c4b5fd"/>
+    </g>
+  </g>
+
+  <!-- ── Center text block ── -->
+  <text x="600" y="135"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, system-ui, sans-serif"
+        font-size="68" font-weight="800" fill="#f8fafc"
+        text-anchor="middle" letter-spacing="-2"
+        filter="url(#textGlow)">
+    Fahd Bellaba
+  </text>
+
+  <!-- Accent line -->
+  <rect x="475" y="160" width="250" height="1.5" fill="url(#accentLine)"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="195"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, system-ui, sans-serif"
+        font-size="13" font-weight="500" fill="#94a3b8"
+        text-anchor="middle" letter-spacing="4">
+    AI ENGINEER  ·  DEEP LEARNING  ·  COMPUTER VISION  ·  AGENTIC SYSTEMS
+  </text>
+
+  <!-- Tertiary tagline -->
+  <text x="600" y="230"
+        font-family="'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace"
+        font-size="11" font-weight="400" fill="#475569"
+        text-anchor="middle" letter-spacing="2">
+    &gt; building intelligent systems end-to-end
+  </text>
+</svg>
